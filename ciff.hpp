@@ -7,6 +7,7 @@
 #include "stdexcept"
 #include "cstdint"
 #include "tuple"
+#include "iostream"
 
 using namespace std;
 
@@ -61,6 +62,9 @@ class CIFF {
         
         const vector<tuple<uint8_t, uint8_t, uint8_t>>& pixels() const { return pixels_; }
         void set_pixels(const vector<tuple<uint8_t, uint8_t, uint8_t>>& value) { pixels_ = value; }
+
+        //parser
+        static CIFF parse_ciff_file(const string& filepath);
 
 };
 

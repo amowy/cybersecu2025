@@ -20,7 +20,7 @@ in pkgs.mkShell {
       echo "Building and installing CIFF package..."
       python setup.py build
       python setup.py install --user
-      export PYTHONPATH=~/.local/lib/python3.$(python3 -c 'import sys; print(sys.version_info.minor)')/site-packages:$PYTHONPATH
+      export PYTHONPATH=~/.local/lib/python3.11/site-packages/ciff-0.1-py3.11-linux-x86_64.egg:$PYTHONPATH
       echo "CIFF package installed successfully!"
     else
       echo "CIFF package already built."

@@ -142,7 +142,7 @@ CIFF CIFF::parse_ciff_file(const string &file_path) {
                 throw runtime_error("Failed to read pixels");
             }
             bytes_read += 3;
-            pixels.emplace_back(rgb[0], rgb[1], rgb[2]);
+            pixels.emplace_back(static_cast<uint8_t>(rgb[0]), static_cast<uint8_t>(rgb[1]), static_cast<uint8_t>(rgb[2]));
         }
         new_ciff.set_pixels(pixels);
 
@@ -156,9 +156,8 @@ CIFF CIFF::parse_ciff_file(const string &file_path) {
         new_ciff.set_is_valid(false);
         cout << e.what() << endl;
     }
-    
 
-    return CIFF();
+    return new_ciff;
 }
 
 #endif

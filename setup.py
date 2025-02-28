@@ -4,7 +4,7 @@ import pybind11
 ext_modules = [
     Extension(
       "ciff",
-      ["pyciff.cpp", "ciff.cpp", "ciff.hpp"],
+      ["pyciff.cpp", "ciff.cpp"],
       include_dirs=[pybind11.get_include()],
       language="c++",  
     ),

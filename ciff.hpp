@@ -23,7 +23,14 @@ class CIFF {
         vector<tuple<uint8_t, uint8_t, uint8_t>> pixels_;
         bool is_valid_;
     public:
-        CIFF();
+        CIFF() :
+            magic_("CIFF"),
+            header_size_(0),
+            content_size_(0),
+            width_(0),
+            height_(0),
+            caption_(""),
+            is_valid_(true) {}
         CIFF(
             const string& magic,
             uint64_t header_size,

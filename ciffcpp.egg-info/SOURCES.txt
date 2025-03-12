@@ -1,9 +1,0 @@
-README.md
-ciff.cpp
-ciff.hpp
-pyciff.cpp
-setup.py
-ciffcpp.egg-info/PKG-INFO
-ciffcpp.egg-info/SOURCES.txt
-ciffcpp.egg-info/dependency_links.txt
-ciffcpp.egg-info/top_level.txt

@@ -7,7 +7,7 @@ in pkgs.mkShell {
       tkinter
       pillow
       pytest
+      mypy
     ]))
-    pkgs.mypy
   ];
 }

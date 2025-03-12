@@ -2,5 +2,6 @@
 ciff.egg-info
 dist
 build
-__pycache__
+**/__pycache__
+**/.mypy_cache/
 
